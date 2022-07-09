@@ -203,6 +203,7 @@ Resources:
       #Engine:  !Select [0, !Split ["_", !ImportValue DBEngine]]
       EngineVersion: 5.7.22
       Engine: MySQL
+      EnablePerformanceInsights : 'true'
       MasterUsername: !Ref DBUsername
       MasterUserPassword: !Ref DBPassword
       MultiAZ: 'false'
@@ -457,7 +458,7 @@ Parameters:
     NoEcho: true
   DBInstanceType:
     Type: String
-    Default: db.m4.xlarge
+    Default: db.m4.2xlarge
     AllowedValues:
       - db.t2.medium
       - db.t2.large
@@ -469,6 +470,7 @@ Parameters:
       - db.m3.2xlarge
       - db.m4.large
       - db.m4.xlarge
+      - db.m4.2xlarge 
       - db.m5.xlarge
       - db.m5.2xlarge
   DBAllocationStorage:
