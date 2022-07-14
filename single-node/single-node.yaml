@@ -311,9 +311,7 @@ Resources:
       Monitoring: 'false'
       Tags:
         - Key: Name
-          Value: suffix_WSO2BastionInstance
-        - Key: User
-          Value: achini@wso2.com        
+          Value: suffix_WSO2BastionInstance     
       NetworkInterfaces:
         - DeleteOnTermination: 'true'
           Description: Primary network interface
@@ -407,9 +405,7 @@ Resources:
       Tags:
         - Key: Name
           Value: suffix_WSO2ISInstance
-          PropagateAtLaunch: 'true'
-        - Key: User
-          Value: achini@wso2.com       
+          PropagateAtLaunch: 'true'   
         - Key: cluster
           Value: is
           PropagateAtLaunch: 'true'
