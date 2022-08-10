@@ -30,15 +30,15 @@ db_password="wso2carbon"
 # Execute common script
 . $script_dir/perf-test-is.sh
 
-# declare -A test_scenario0=(
-#     [name]="00-authenticate_super_tenant_users"
-#     [display_name]="Authenticate Super Tenant User"
-#     [description]="Select random super tenant users and authenticate through the RemoteUserStoreManagerService."
-#     [jmx]="authenticate/Authenticate_Super_Tenant_User.jmx"
-#     [tenantMode]=false
-#     [skip]=false
-#     [modes]="FULL QUICK"
-# )
+declare -A test_scenario0=(
+    [name]="00-authenticate_super_tenant_users"
+    [display_name]="Authenticate Super Tenant User"
+    [description]="Select random super tenant users and authenticate through the RemoteUserStoreManagerService."
+    [jmx]="authenticate/Authenticate_Super_Tenant_User.jmx"
+    [tenantMode]=false
+    [skip]=false
+    [modes]="FULL QUICK"
+)
 declare -A test_scenario1=(
     [name]="01-oauth_auth_code_redirect_with_consent"
     [display_name]="Auth Code Grant Redirect With Consent"
