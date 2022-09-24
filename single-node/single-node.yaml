@@ -515,10 +515,10 @@ Parameters:
     ConstraintDescription: Must be a valid EC2 instance type
 Mappings:
   WSO2ISAMIRegionMapsuffix:
-    us-east-1:
-      AMI: ami-0b86cfbff176b7d3a
-    us-east-2:
-      AMI: ami-0125a7e5b2489477a
+    # us-east-1:
+    #   AMI: ami-0b86cfbff176b7d3a
+    # us-east-2:
+    #   AMI: ami-0125a7e5b2489477a
     us-west-1:
       AMI: ami-0e81aa4c57820bb57
     us-west-2:
