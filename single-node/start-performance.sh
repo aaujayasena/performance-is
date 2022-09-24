@@ -230,7 +230,7 @@ jq -n \
     "$test_parameters_json" > "$results_dir"/cf-test-metadata.json
 
 stack_create_start_time=$(date +%s)
-create_stack_command="aws cloudformation create-stack --stack-name $stack_name \
+create_stack_command="aws --region us-west-1 cloudformation create-stack --stack-name $stack_name \
     --template-body file://new-single-node.yaml \
     --parameters \
         ParameterKey=CertificateName,ParameterValue=$certificate_name \
